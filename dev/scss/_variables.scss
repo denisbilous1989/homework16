@@ -1,0 +1,22 @@
+//colors
+$black: #000000;
+$orange: #ff6336;
+$yellow: #FFF8E4;
+$white: #fff;
+$bg_orange: #FF9C7D;
+$blue: #C9E8F2;
+$brown: #DABC98;
+$gray: #EEEEEE;
+
+//base style
+$border_width: 1px;
+$border_style: solid;
+$base_font_weight: 400;
+$big_font_weight: 600;
+$base_font_size: 20px;
+$base_line_height: 30px;
+
+//btn
+$btn_border: $border_width $border_style $black;
+$btn_bg_orange: $orange;
+$btn-bg_black: $black;

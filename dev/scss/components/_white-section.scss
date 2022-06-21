@@ -1,0 +1,52 @@
+.white {
+
+  padding: 50px 0;
+
+  @media (min-width:768px) {
+    padding: 100px 0;
+  }
+  @media (min-width:992px) {
+    padding: 150px 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .cards {
+    margin: 20px 0 0 0;
+
+    li {
+      @media (min-width:768px) {
+        width: 100%;
+      }
+      @media (min-width:992px) {
+        width: calc(30% - 20px);
+      }
+    }
+    .card {
+      text-align: center;
+
+      @media (min-width:768px) {
+        display: block;
+      }
+
+      &__visual {
+        height: 200px;
+      }
+
+      &__title {
+        margin: 5px 0;
+      }
+
+      &__footer {
+        text-decoration: underline;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.white_section ~ .white_section {
+  padding: 165px 209px;
+}

@@ -1,0 +1,115 @@
+.box {
+  padding: 20px 0 100px 0;
+
+  @media (min-width:768px) {
+    padding: 50px 0 125px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (min-width:992px) {
+    padding: 130px 0 170px 0;
+  }
+ 
+      &__col {
+        width: 100%;
+        text-align: center;
+        font-size: $base_font_size - 5px;
+        line-height: calc(25 / 15);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (min-width:768px) {
+          text-align: left;
+          font-size: $base_font_size - 2px;
+        }
+
+        @media (min-width:992px) {
+          font-size: $base_font_size + 3px;
+        }
+      }
+
+      &__title {
+          margin: 0;
+
+          &--big {
+            
+            @media (min-width:768px) {
+              font-size: $base_font_size + 15px;
+            }
+
+            @media (min-width:992px) {
+              font-size: $base_font_size + 30px;
+            }
+
+            @media (min-width:1200px) {
+              font-size: $base_font_size + 45px;
+            }
+          }
+      }
+
+      &__content {
+            a {
+              text-decoration: underline;
+              transition: all 0.5s;
+            
+                  &:hover {
+                    text-shadow: 2px 2px 4px $black;
+                    color: $orange;
+                    text-decoration: none;
+                  }
+              }
+        }
+        .buttons {
+          margin: 0 -5px;
+
+          &__item {
+            margin: 5px;
+            display: inline-block;
+          }
+        }
+
+      .btn {
+          font-weight: $big_font_weight;
+          font-size: $base_font_size - 10px;
+          line-height: calc(60 / 16);
+      
+            @media (min-width:768px) {
+              font-size: $base_font_size - 7px;
+            }
+            @media (min-width:992px) {
+              font-size: $base_font_size - 4px;
+            }
+
+            &--white {
+              padding: 0 25px;
+   
+              @media (min-width:768px) {
+               padding: 0px 29px;
+              }
+          }
+
+          &--orange {
+            padding: 0 34px;
+ 
+            @media (min-width:768px) {
+             padding: 0px 41px;
+            }
+       }
+      }
+
+      &__footer {
+        font-size: $base_font_size - 10px;
+        line-height: calc(25 / 15);
+        margin-top: 15px;
+
+        @media (min-width:768px) {
+          font-size: $base_font_size - 5px;
+          margin-top: 20px;
+        }
+
+        @media (min-width:992px) {}
+          margin-top: 25px;
+      }
+}

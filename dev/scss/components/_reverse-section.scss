@@ -1,0 +1,52 @@
+.reverse {
+  .box {
+    display: block;
+
+    @media (min-width:992px) {
+      display: flex;
+    }
+
+    &__col {
+      align-items: center;
+      @media (min-width:768px) {
+        text-align: center;
+      }
+      @media (min-width:992px) {
+        margin: 0 15px;
+        width: calc(50% - 20px);
+        align-items: flex-start;
+        text-align: left;
+      }
+      @media (min-width:1200px) {
+        width: calc(50% - 50px);
+      }
+    }
+    &__footer {
+      margin-bottom: 15px;
+      font-weight: $big_font_weight;
+      transition: all 0.5s;
+      font-size: $base_font_size - 5px;
+      line-height: calc(25 / 15);
+
+      @media (min-width:768px) {
+        font-size: $base_font_size;
+      }
+      @media (min-width:992px) {
+        font-size: $base_font_size + 5px;
+      }
+
+        &:hover {
+          text-shadow: 2px 2px 4px $black;
+          color: $orange;
+        }
+    }
+
+    &__visual {
+      text-align: center;
+    }
+  }
+
+  .box:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
